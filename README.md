@@ -1,3 +1,11 @@
+# To My Sweetheart Lina 🤗
+
+I dedicate this code to you, to help you speedrun your project during these hectic last moments before your eagerly awaited Final Thesis Seminar. With all my love and encouragement,
+
+> **From Your Beloved Yahia**
+
+---
+
 ## Django Webcam Streaming Application Documentation
 
 This documentation provides a detailed explanation of the Django-based webcam streaming application, covering both the views and the HTML template used.
@@ -432,3 +440,6 @@ def stop_stream(request):
 ### Conclusion
 
 This Django application provides a solid foundation for webcam streaming and image capturing using OpenCV. It leverages Django's session management to maintain the streaming state and ensures secure interactions with CSRF protection. By adhering to best practices in error handling and considering potential enhancements, this application can be extended and improved to offer a robust and user-friendly experience.
+
+$$
+$$
