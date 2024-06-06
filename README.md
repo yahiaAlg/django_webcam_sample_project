@@ -1,11 +1,3 @@
-# To My Sweetheart Lina 🤗
-
-I dedicate this code to you, to help you speedrun your project during these hectic last moments before your eagerly awaited Final Thesis Seminar. With all my love and encouragement,
-
-> **From Your Beloved Yahia**
-
----
-
 ## Django Webcam Streaming Application Documentation
 
 This documentation provides a detailed explanation of the Django-based webcam streaming application, covering both the views and the HTML template used.
