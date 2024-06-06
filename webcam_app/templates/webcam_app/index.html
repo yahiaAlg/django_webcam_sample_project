@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webcam Feed</title>
+  </head>
+  <body>
+    <h1>Webcam Feed</h1>
+    {% if streaming %}
+    <img src="{% url 'video_feed' %}" width="640" height="480" />
+    {% else %}
+    <p>Stream is paused.</p>
+    {% endif %}
+
+    <form action="{% url 'capture' %}" method="post" style="display: inline">
+      {% csrf_token %}
+      <button type="submit" {% if not streaming %}disabled{% endif %}>
+        Capture Image
+      </button>
+    </form>
+
+    <form
+      action="{% url 'start_stream' %}"
+      method="post"
+      style="display: inline"
+    >
+      {% csrf_token %}
+      <button type="submit" {% if streaming %}disabled{% endif %}>
+        Start Streaming
+      </button>
+    </form>
+
+    <form
+      action="{% url 'stop_stream' %}"
+      method="post"
+      style="display: inline"
+    >
+      {% csrf_token %}
+      <button type="submit" {% if not streaming %}disabled{% endif %}>
+        Stop Streaming
+      </button>
+    </form>
+  </body>
+</html>
